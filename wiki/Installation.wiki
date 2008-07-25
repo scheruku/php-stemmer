@@ -1,0 +1,25 @@
+#summary How to install the stemmer PHP extension
+#labels Phase-Deploy
+
+= Introduction =
+
+The stemmer PHP extension can be installed following the instructions about building PHP extensions using phpize as described in the [http://www.php.net/manual/en/install.pecl.phpize.php PHP manual].
+
+
+= Details =
+
+The phpize command is used to prepare the build environment for a PHP extension. In the following sample, the sources for an extension are in a directory named stemmer-php:
+
+$ cd stemmer-php
+$ phpize
+$ ./configure
+$ make
+# make install
+
+Edit you php.ini file and add the line
+extension=libstemmer.so
+
+
+= About libstemmer_c =
+
+The stemmer PHP extension uses a modified version of libstemmer_c. It has replaced the default Dutch stemming algorithm with the much better Kraaij-Pohlmann Dutch stemming algorithm.
