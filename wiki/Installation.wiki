@@ -8,14 +8,17 @@ The stemmer PHP extension can be installed following the instructions about buil
 
 = Details =
 
+To build this extension, you need to have the PHP development tools installed. For ubuntu/debian you can use `apt-get install php5-dev`.
+
 The phpize command is used to prepare the build environment for a PHP extension. In the following sample, the sources for an extension are in a directory named stemmer-php:
 
 {{{
-$ cd stemmer-php
-$ phpize
-$ ./configure
-$ make
-# make install
+ tar -xzf stemmer-php-*.tar.gz
+ cd stemmer-php
+ phpize
+ ./configure
+ make
+ [sudo] make install
 }}}
 
 Edit you php.ini file and add the line `extension=stemmer.so`
