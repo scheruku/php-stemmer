@@ -20,6 +20,6 @@ Edit you php.ini file and add the line
 extension=libstemmer.so
 
 
-= About libstemmer_c =
+== About libstemmer_c ==
 
 The stemmer PHP extension uses a modified version of libstemmer_c. It has replaced the default Dutch stemming algorithm with the much better Kraaij-Pohlmann Dutch stemming algorithm.
