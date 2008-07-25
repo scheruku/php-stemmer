@@ -10,16 +10,17 @@ The stemmer PHP extension can be installed following the instructions about buil
 
 The phpize command is used to prepare the build environment for a PHP extension. In the following sample, the sources for an extension are in a directory named stemmer-php:
 
+{{{
 $ cd stemmer-php
 $ phpize
 $ ./configure
 $ make
 # make install
+}}}
 
-Edit you php.ini file and add the line
-extension=libstemmer.so
+Edit you php.ini file and add the line `extension=stemmer.so`
 
 
 == About libstemmer_c ==
 
-The stemmer PHP extension uses a modified version of libstemmer_c. It has replaced the default Dutch stemming algorithm with the much better Kraaij-Pohlmann Dutch stemming algorithm.
+The stemmer PHP extension uses a modified version of libstemmer_c. It has replaced the default Dutch stemming algorithm with the much better Kraaij-Pohlmann Dutch stemming algorithm. The modified version of this lib can be downloaded from [http://mysqludf.com/lib_mysqludf_stem mysqludf.com].
