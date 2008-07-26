@@ -13,8 +13,8 @@ To build this extension, you need to have the PHP development tools installed. F
 The phpize command is used to prepare the build environment for a PHP extension. In the following sample, the sources for an extension are in a directory named stemmer-php:
 
 {{{
- tar -xzf stemmer-php-*.tar.gz
- cd stemmer-php
+ tar -xzf php-stemmer-*.tar.gz
+ cd php-stemmer
  phpize
  ./configure
  cd libstemmer_c
