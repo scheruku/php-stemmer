@@ -17,6 +17,9 @@ The phpize command is used to prepare the build environment for a PHP extension.
  cd stemmer-php
  phpize
  ./configure
+ cd libstemmer_c
+ make
+ cd ..
  make
  [sudo] make install
 }}}
